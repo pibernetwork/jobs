@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { LanguageOrFramework, Personal, Tools } from './types';
+import { Personal, Technology, Tools } from './types';
 
 export const personal: Personal = {
   name: 'Maurício Piber Fão',
@@ -17,7 +17,7 @@ export const personal: Personal = {
   },
 };
 
-export const languageOrFramework: LanguageOrFramework[] = [
+export const technology: Technology[] = [
   {
     title: 'Javascript',
     age: dayjs().diff(dayjs('2011-01-01'), 'year'),

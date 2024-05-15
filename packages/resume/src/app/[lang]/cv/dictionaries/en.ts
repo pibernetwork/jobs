@@ -1,4 +1,4 @@
-import { Education, Experience } from '../types';
+import { Education, Experience, Labels, Language } from '../types';
 
 export const metadata = {
   title: 'Resume - Mauricio Piber Fão',
@@ -6,7 +6,7 @@ export const metadata = {
 
 export const titles = ['Full stack', 'NextJS', 'React', 'NodeJS', 'Typescript'];
 
-export const labels = {
+export const labels: Labels = {
   title: 'Resume',
   summary: 'Summary',
   experience: 'Experience',
@@ -14,6 +14,9 @@ export const labels = {
   achievements: 'Achievements',
   skill: 'Skills',
   language: 'Languages',
+  tools: 'Tools',
+  books: 'Books',
+  technology: 'Technology',
 };
 
 // export const summary = `Focus on both customer and developer experience, always providing performante solution while keeping clean code.
@@ -88,7 +91,7 @@ export const books = [
   'Clean architecture',
 ];
 
-export const languages = [
+export const languages: Language[] = [
   {
     title: 'Portuguese',
     quality: 'Native',

@@ -1,4 +1,4 @@
-import { Education, Experience } from '../types';
+import { Education, Experience, Labels, Language } from '../types';
 
 export const metadata = {
   title: 'Curriculum Vitae - Mauricio Piber Fão',
@@ -10,7 +10,7 @@ export const titles = [
   'Conhecimento profundo',
 ];
 
-export const labels = {
+export const labels: Labels = {
   title: 'Curriculum Vitae',
   summary: 'Resumo',
   experience: 'Experiências',
@@ -18,6 +18,9 @@ export const labels = {
   achievements: 'Conquistas',
   skill: 'Habilidades',
   language: 'Línguas',
+  tools: 'Ferramentas',
+  technology: 'Tecnologia',
+  books: 'Livros',
 };
 
 export const summary = `Foco na experiência de usuário e desenvolvimento, com performance para o cliente enquanto mantém o código limpo e organizado para adoção por novos desenvolvedores. Passo rápido de aprendizagem. `;
@@ -34,7 +37,7 @@ export const books = [
   'Arquitetura limpa',
 ];
 
-export const languages = [
+export const languages: Language[] = [
   {
     title: 'Português',
     quality: 'Nativo',

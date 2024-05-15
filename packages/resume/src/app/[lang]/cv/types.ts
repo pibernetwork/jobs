@@ -1,5 +1,18 @@
 export type Titles = string[];
 
+export interface Labels {
+  title: string;
+  summary: string;
+  experience: string;
+  education: string;
+  achievements: string;
+  skill: string;
+  language: string;
+  technology: string;
+  tools: string;
+  books: string;
+}
+
 export interface Personal {
   name: string;
   email: string;
@@ -31,9 +44,14 @@ export interface Education {
   location: string;
 }
 
-export interface LanguageOrFramework {
+export interface Technology {
   title: string;
   age: number;
+}
+
+export interface Language {
+  title: string;
+  quality: string;
 }
 
 export interface Library {
@@ -44,4 +62,18 @@ export interface Library {
 export interface Tools {
   title: string;
   libraries: Library[];
+}
+
+export interface Resume {
+  personal: Personal;
+  labels: Labels;
+  titles: Titles;
+  summary: string;
+  experiences: Experience[];
+  books: string[];
+  technology: Technology[];
+  tools: Tools[];
+  educations: Education[];
+  achievements: string[];
+  languages: Language[];
 }
