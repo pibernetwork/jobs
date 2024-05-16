@@ -1,11 +1,21 @@
 import dayjs from 'dayjs';
-import BashIcon from './icons/bash';
+import AWSIcon from './icons/aws-icon';
+import BashIcon from './icons/bash-icon';
 import JavascriptIcon from './icons/javascript-icon';
 import JestIcon from './icons/jest-icon';
+import MaterialUiIcon from './icons/material-icon';
+import MongoIcon from './icons/mongo-icon';
+import MysqlIcon from './icons/mysql-icon';
 import NextJSIcon from './icons/nextjs-icon';
 import PlaywrightIcon from './icons/playwright';
 import ReactIcon from './icons/react-icon';
+import SQLiteIcon from './icons/sqlite-icon';
+import SvelteIcon from './icons/svelte-icon';
+import SvelteKitIcon from './icons/svelte-kit-icon';
+import TestCafeIcon from './icons/testcafe-icon';
 import TypescriptIcon from './icons/typescript-icon';
+import VercelIcon from './icons/vercel-icon';
+import WebflowIcon from './icons/webflow-icon';
 import { Personal, Technology, Tools } from './types';
 
 export const personal: Personal = {
@@ -59,6 +69,56 @@ export const technology: Technology[] = [
     title: 'Playwright',
     age: dayjs().diff(dayjs('2022-01-01'), 'year'),
     Icon: PlaywrightIcon,
+  },
+  {
+    title: 'MongoDB',
+    age: 1,
+    Icon: MongoIcon,
+  },
+  {
+    title: 'MySQL',
+    age: 1,
+    Icon: MysqlIcon,
+  },
+  {
+    title: 'SQLite',
+    age: 1,
+    Icon: SQLiteIcon,
+  },
+  {
+    title: 'Svelte',
+    age: 1,
+    Icon: SvelteIcon,
+  },
+  {
+    title: 'SvelteKit',
+    age: 1,
+    Icon: SvelteKitIcon,
+  },
+  {
+    title: 'Webflow',
+    age: 1,
+    Icon: WebflowIcon,
+  },
+  {
+    title: 'AWS',
+    age: 1,
+    Icon: AWSIcon,
+  },
+  {
+    title: 'Vercel',
+    age: 1,
+    Icon: VercelIcon,
+  },
+  {
+    title: 'TestCafe',
+    age: 1,
+    Icon: TestCafeIcon,
+  },
+  {
+    title: 'MaterialUi',
+    age: 1,
+    Icon: MaterialUiIcon,
   },
 ];
 

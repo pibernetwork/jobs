@@ -1,3 +1,5 @@
+import Duration from '../components/duration';
+import Location from '../components/location';
 import { Experience } from '../types';
 
 export default function ExperienceCard({
@@ -8,12 +10,8 @@ export default function ExperienceCard({
   return (
     <div key={company} className="my-1">
       <h3 className="text-lg font-bold leading-tight">{title}</h3>
-      <p className="text-sm text-gray-600">
-        {company} - {location}
-      </p>
-      <p className="text-xs">
-        {start} to {end} - Remote
-      </p>
+      <Location name={company} location={location} />
+      <Duration start={start} end={end} />
       <ul className="">
         {responsabilities.map((responsability) => (
           <li key={responsability} className="text-xs">

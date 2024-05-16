@@ -21,7 +21,7 @@ export const labels: Labels = {
   language: 'Línguas',
   tools: 'Ferramentas',
   technology: 'Tecnologia',
-  books: 'Livros',
+  methodology: 'Metodologia',
 };
 
 export const summary = `Foco na experiência de usuário e desenvolvimento, com performance para o cliente enquanto mantém o código limpo e organizado para adoção por novos desenvolvedores. Passo rápido de aprendizagem. `;
@@ -32,10 +32,13 @@ export const educations: Education[] = [];
 
 export const achievements = [];
 
-export const books = [
-  'O programador pragmático',
-  'Código limpo',
-  'Arquitetura limpa',
+/**
+ * Metodology
+ */
+export const methodology = [
+  'The pragmatic programmer',
+  'Clean code',
+  'Clean architecture',
 ];
 
 export const languages: Language[] = [

@@ -10,6 +10,7 @@ import Education from './sections/education';
 import Experiences from './sections/experiences';
 import Header from './sections/header';
 import Languages from './sections/languages';
+import Methodology from './sections/methodology';
 import Skills from './sections/skills';
 import Summary from './sections/summary';
 
@@ -23,7 +24,7 @@ export default function Resume({ lang }: { lang: Locale }) {
     experience,
     educations,
     achievements,
-    books,
+    methodology,
     languages,
   } = intl;
 
@@ -37,17 +38,17 @@ export default function Resume({ lang }: { lang: Locale }) {
         experiences: experience,
         educations,
         achievements: achievements,
-        books,
+        methodology,
         languages,
         technology,
         tools,
       }}
     >
       <div>
-        <div className="m-4  min-h-[297mm] w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none mx-auto overflow-y-hidden">
+        <div className="m-4 h-[297mm]  w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none mx-auto overflow-y-hidden">
           <Header />
 
-          <div className="grid grid-cols-[3fr,2fr] divide-x">
+          <div className="grid grid-cols-[4fr,2fr] divide-x">
             <Column>
               <Summary />
               <Experiences />
@@ -56,6 +57,7 @@ export default function Resume({ lang }: { lang: Locale }) {
             <Column>
               <Achievements />
               <Skills />
+              <Methodology />
               <Languages />
             </Column>
           </div>

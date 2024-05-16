@@ -4,7 +4,13 @@ export const metadata = {
   title: 'Resume - Mauricio Piber Fão',
 };
 
-export const titles = ['Full stack', 'NextJS', 'React', 'NodeJS', 'Typescript'];
+export const titles = [
+  'Full stack',
+  'Javascript',
+  'React',
+  'NodeJS',
+  'Typescript',
+];
 
 export const labels: Labels = {
   years: 'Years',
@@ -16,19 +22,19 @@ export const labels: Labels = {
   skill: 'Skills',
   language: 'Languages',
   tools: 'Tools',
-  books: 'Books',
+  methodology: 'Methodology',
   technology: 'Technology',
 };
 
 // export const summary = `Focus on both customer and developer experience, always providing performante solution while keeping clean code.
 //   Fast peace for learning new technology and become productive`;
 
-export const summary = `Dynamic web development professional with 13 years of pioneering experience in adopting cutting-edge technologies in Brazilian enterprises. Proven track record in delivering high-quality, scalable websites for medium to large-scale projects. Expert in modern frameworks and tools, driving significant improvements in performance and user engagement. Committed to continuous learning and excellence, with a passion for fostering innovation and collaboration.`;
+export const summary = `Remote web development professional with 13 years of pioneering experience in adopting cutting-edge technologies in Brazilian enterprises. Proven track record in delivering high-quality, scalable websites for medium to large-scale projects. Expert in modern frameworks and tools, driving significant improvements in performance and user engagement. Committed to continuous learning and excellence, with a passion for fostering innovation and collaboration.`;
 
 export const experience: Experience[] = [
   {
     company: 'Piber Network',
-    title: 'Owner - Fullstack developer',
+    title: 'Fullstack developer',
     start: 'Jul 2023',
     end: 'Present',
     location: 'Porto Alegre - RS - Brazil',
@@ -40,7 +46,7 @@ export const experience: Experience[] = [
   },
   {
     company: 'Finsweet',
-    title: 'Frontend developer',
+    title: 'Fullstack developer',
     start: 'Dez 2021',
     end: 'Jul 2023',
     location: 'New York, New York, United States',
@@ -65,7 +71,7 @@ export const experience: Experience[] = [
   },
   {
     company: 'Piber Network',
-    title: 'Owner - Fullstack developer',
+    title: 'Fullstack developer',
     start: 'Set 2013',
     end: 'Dez 2021',
     location: 'Porto Alegre - RS - Brazil',
@@ -87,6 +93,11 @@ export const educations: Education[] = [
   },
 ];
 
+/**
+ * Inovation
+ * Performance
+ * Leadership
+ */
 export const achievements = [
   'Rewrite a legacy website to pass on web core vitals, with 90~ average on page speed insights mobile, passing from 0.2 to 0.9 on adword quality score, getting a hugh discount to adwords, competing with big companies for first place on google',
   'Understood a big codebase to create an automate tool to validate Attributes instalation',
@@ -97,11 +108,10 @@ export const achievements = [
   'Pioneer on ReactJS on 2018',
 ];
 
-export const books = [
-  'The pragmatic programmer',
-  'Clean code',
-  'Clean architecture',
-];
+/**
+ * Metodology
+ */
+export const methodology = ['Kanban', 'Scrum', 'TDD'];
 
 export const languages: Language[] = [
   {

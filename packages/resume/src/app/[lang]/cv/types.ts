@@ -13,7 +13,7 @@ export interface Labels {
   language: string;
   technology: string;
   tools: string;
-  books: string;
+  methodology: string;
 }
 
 export interface Personal {
@@ -69,13 +69,15 @@ export interface Tools {
   libraries: Library[];
 }
 
+export type Metodology = string[];
+
 export interface Resume {
   personal: Personal;
   labels: Labels;
   titles: Titles;
   summary: string;
   experiences: Experience[];
-  books: string[];
+  methodology: string[];
   technology: Technology[];
   tools: Tools[];
   educations: Education[];
