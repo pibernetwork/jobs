@@ -11,6 +11,7 @@ export const titles = [
 ];
 
 export const labels: Labels = {
+  years: 'Anos',
   title: 'Curriculum Vitae',
   summary: 'Resumo',
   experience: 'Experiências',

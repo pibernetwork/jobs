@@ -10,9 +10,10 @@ export default function Skills() {
       <>
         <h3>{labels.technology}</h3>
         <ul>
-          {technology.map((techSkill) => (
-            <li key={techSkill.title} className="text-sm">
-              {techSkill.title} - {techSkill.age}+ years
+          {technology.map(({ title, age, Icon }) => (
+            <li key={title} className="text-sm flex items-center">
+              <span className="mr-1">{Icon && <Icon />}</span>
+              {title} - {age}+ {labels.years.toLocaleLowerCase()}
             </li>
           ))}
         </ul>

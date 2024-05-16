@@ -1,6 +1,9 @@
+import { ReactElement, SVGProps } from 'react';
+
 export type Titles = string[];
 
 export interface Labels {
+  years: string;
   title: string;
   summary: string;
   experience: string;
@@ -33,6 +36,7 @@ export interface Experience {
   title: string;
   start: string;
   end: string;
+  location: string;
   responsabilities: string[];
 }
 
@@ -47,6 +51,7 @@ export interface Education {
 export interface Technology {
   title: string;
   age: number;
+  Icon?: (props: SVGProps<SVGSVGElement>) => ReactElement;
 }
 
 export interface Language {

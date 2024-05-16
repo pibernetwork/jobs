@@ -7,6 +7,7 @@ export const metadata = {
 export const titles = ['Full stack', 'NextJS', 'React', 'NodeJS', 'Typescript'];
 
 export const labels: Labels = {
+  years: 'Years',
   title: 'Resume',
   summary: 'Summary',
   experience: 'Experience',
@@ -27,15 +28,27 @@ Dedicated to both teaching and learning, with a love for sharing knowledge and e
 
 export const experience: Experience[] = [
   {
+    company: 'Piber Network',
+    title: 'Owner - Fullstack developer',
+    start: 'Jul 2023',
+    end: 'Present',
+    location: 'Porto Alegre - RS - Brazil',
+    responsabilities: [
+      'Developing internal solution to create marketing websites that reach maximum google score for SEO optimization and Adwords - WIP',
+      'Freelancing on marketing websites to solve bugs and deliver on deadline',
+      'Migrate legacy code to NextJS 14 and Typescript',
+    ],
+  },
+  {
     company: 'Finsweet',
     title: 'Frontend developer',
     start: 'Dez 2021',
     end: 'Jul 2023',
+    location: 'New York, New York, United States',
     responsabilities: [
-      'Rewrite legacy application from Vanilla javascript to Typescript',
-      'Maintence to existing and creating of new Attributes',
-      'Develop an automate support service for Attributes as web component using Svelte',
-      'Support for newer developer as well as code review',
+      'Led the transition of a legacy application from Vanilla JavaScript to TypeScript, enhancing type safety and reducing runtime errors.',
+      'Developed an automated support service for Attributes to help without human intervention, resulting in a 60% reduction in support tickets and chats.',
+      'Supported college projects by identifying and resolving bugs and answering technical questions, ensuring deadlines were met for major projects.',
     ],
   },
   {
@@ -43,11 +56,12 @@ export const experience: Experience[] = [
     title: 'Fullstack developer',
     start: 'Oct 2019',
     end: 'Dez 2021',
+    location: 'São Paulo - SP - Brazil',
     responsabilities: [
       'Rewrite legacy webflow sites into NextJS for maximum performance and google ads quality score',
       'Creating new websites from scratch',
       'Maintance on legacy system writen on Angular + C#',
-      'Coach developers on Javascript',
+      'Mentoring of new developers in Javascript, React',
     ],
   },
   {
@@ -55,19 +69,18 @@ export const experience: Experience[] = [
     title: 'Owner - Fullstack developer',
     start: 'Set 2013',
     end: 'Dez 2021',
+    location: 'Porto Alegre - RS - Brazil',
     responsabilities: [
-      'Custom javascript integrations',
-      'Custom components',
-      'Automations',
-      'Quality review',
-      'Mentoring',
+      'Over 5 e-commerces with more than $ 10m avenue in sales write in Zend Framework',
+      'Support on marketing websites by improving UX, performance, code quality and adding more features',
+      'Create automations and communication between different services and APIs',
     ],
   },
 ];
 
 export const educations: Education[] = [
   {
-    title: 'Computer science (incomplete)',
+    title: 'BS in Computer Science (Incomplete)',
     university: 'Unisinos',
     location: 'São Leopoldo - RS - Brazil',
     start: 'Mar 2008',

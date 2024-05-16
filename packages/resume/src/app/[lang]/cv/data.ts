@@ -1,4 +1,11 @@
 import dayjs from 'dayjs';
+import BashIcon from './icons/bash';
+import JavascriptIcon from './icons/javascript-icon';
+import JestIcon from './icons/jest-icon';
+import NextJSIcon from './icons/nextjs-icon';
+import PlaywrightIcon from './icons/playwright';
+import ReactIcon from './icons/react-icon';
+import TypescriptIcon from './icons/typescript-icon';
 import { Personal, Technology, Tools } from './types';
 
 export const personal: Personal = {
@@ -21,38 +28,38 @@ export const technology: Technology[] = [
   {
     title: 'Javascript',
     age: dayjs().diff(dayjs('2011-01-01'), 'year'),
+    Icon: JavascriptIcon,
   },
   {
     title: 'ReactJS',
     age: dayjs().diff(dayjs('2017-09-01'), 'year'),
+    Icon: ReactIcon,
   },
   {
     title: 'NextJS',
     age: dayjs().diff(dayjs('2019-06-01'), 'year'),
+    Icon: NextJSIcon,
   },
   {
     title: 'Typescript',
     age: dayjs().diff(dayjs('2020-06-01'), 'year'),
+    Icon: TypescriptIcon,
+  },
+  {
+    title: 'Bash',
+    age: dayjs().diff(dayjs('2013-01-01'), 'year'),
+    Icon: BashIcon,
+  },
+  {
+    title: 'Jest',
+    age: dayjs().diff(dayjs('2018-01-01'), 'year'),
+    Icon: JestIcon,
+  },
+  {
+    title: 'Playwright',
+    age: dayjs().diff(dayjs('2022-01-01'), 'year'),
+    Icon: PlaywrightIcon,
   },
 ];
 
-export const tools: Tools[] = [
-  {
-    title: 'Unit tests',
-    libraries: [
-      { name: 'Jest', current: true },
-      { name: 'Vitest', current: true },
-      { name: 'React testing library', current: true },
-      { name: 'Jasmine', current: false },
-    ],
-  },
-  {
-    title: 'Integration/e2e tests',
-    libraries: [
-      { name: 'Playwright', current: true },
-      { name: 'Testcafe', current: false },
-      { name: 'Selenium', current: false },
-      { name: 'Webdriver.io', current: false },
-    ],
-  },
-];
+export const tools: Tools[] = [];
