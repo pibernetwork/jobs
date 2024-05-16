@@ -1,5 +1,5 @@
+import Section from '../components/section';
 import { useResumeContext } from '../context/useResumeContext';
-import Section from './section';
 
 export default function Languages() {
   const { labels, languages } = useResumeContext();
@@ -9,7 +9,7 @@ export default function Languages() {
       <ul>
         {languages.map((language) => {
           return (
-            <li key={language.title}>
+            <li key={language.title} className="text-xs">
               {language.title} - {language.quality}
             </li>
           );

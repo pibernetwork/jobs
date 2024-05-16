@@ -1,6 +1,6 @@
 import clsx from 'clsx';
+import Section from '../components/section';
 import { useResumeContext } from '../context/useResumeContext';
-import Section from './section';
 
 export default function Skills() {
   const { labels, technology, tools, books } = useResumeContext();

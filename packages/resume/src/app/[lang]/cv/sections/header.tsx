@@ -16,14 +16,7 @@ export default function Header() {
       title: 'Github',
       link: personal.github,
     },
-    // {
-    //   title: 'Instagram',
-    //   link: personal.instagram,
-    // },
-    // {
-    //   title: 'Facebook',
-    //   link: personal.facebook,
-    // },
+
     {
       title: `${personal.location.city} - ${personal.location.state} - ${personal.location.country}`,
       link: personal.location.maps,
@@ -32,25 +25,24 @@ export default function Header() {
 
   return (
     <>
-      <p className="text-center text-lg">{labels.title}</p>
-      <h1 className="text-2xl text-center uppercase font-bold">
+      <h1 className="text-xl text-center uppercase font-bold">
         {personal.name}
       </h1>
 
-      <ul className="flex divide-x justify-center m-2">
+      <ul className="flex divide-x justify-center">
         {titles.map((title) => {
           return (
-            <li key={title} className="px-2 text-xl">
+            <li key={title} className="px-2 text-lg">
               {title}
             </li>
           );
         })}
       </ul>
 
-      <ul className="flex divide-x justify-center mx-2 my-4 flew-wrap">
+      <ul className="flex divide-x justify-center flew-wrap">
         {personalLinks.map(({ title, link }) => {
           return (
-            <li key={title} className="px-2">
+            <li key={title} className="px-2 text-base">
               <a href={link}>{title}</a>
             </li>
           );

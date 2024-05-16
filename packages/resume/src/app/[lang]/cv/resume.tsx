@@ -1,16 +1,17 @@
 'use client';
 
 import { use } from 'react';
-import Achievements from './components/achievements';
-import Education from './components/education';
-import Experiences from './components/experiences';
-import Header from './components/header';
-import Languages from './components/languages';
-import Skills from './components/skills';
-import Summary from './components/summary';
+import Column from './components/column';
 import { ResumeContext } from './context/resume.context';
 import { personal, technology, tools } from './data';
 import { Locale, getDictionary } from './dictionaries';
+import Achievements from './sections/achievements';
+import Education from './sections/education';
+import Experiences from './sections/experiences';
+import Header from './sections/header';
+import Languages from './sections/languages';
+import Skills from './sections/skills';
+import Summary from './sections/summary';
 
 export default function Resume({ lang }: { lang: Locale }) {
   const intl = use(getDictionary(lang));
@@ -43,20 +44,20 @@ export default function Resume({ lang }: { lang: Locale }) {
       }}
     >
       <div>
-        <div className="m-1 h-[297mm] max-h-[297mm] w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none mx-auto overflow-y-scroll">
+        <div className="m-4  min-h-[297mm] w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none mx-auto overflow-y-hidden">
           <Header />
 
           <div className="grid grid-cols-[3fr,2fr] divide-x">
-            <div className="p-1">
+            <Column>
               <Summary />
               <Experiences />
               <Education />
-              <Languages />
-            </div>
-            <div className="p-1">
+            </Column>
+            <Column>
               <Achievements />
               <Skills />
-            </div>
+              <Languages />
+            </Column>
           </div>
         </div>
         <div className="print:hidden my-4">

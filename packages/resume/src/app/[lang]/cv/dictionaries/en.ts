@@ -10,7 +10,7 @@ export const labels: Labels = {
   years: 'Years',
   title: 'Resume',
   summary: 'Summary',
-  experience: 'Experience',
+  experience: 'Experiences',
   education: 'Education',
   achievements: 'Achievements',
   skill: 'Skills',
@@ -23,8 +23,7 @@ export const labels: Labels = {
 // export const summary = `Focus on both customer and developer experience, always providing performante solution while keeping clean code.
 //   Fast peace for learning new technology and become productive`;
 
-export const summary = `13+ years in web development, proficient in all aspects of full stack development from ideation to deployment.
-Dedicated to both teaching and learning, with a love for sharing knowledge and expertise.`;
+export const summary = `Dynamic web development professional with 13 years of pioneering experience in adopting cutting-edge technologies in Brazilian enterprises. Proven track record in delivering high-quality, scalable websites for medium to large-scale projects. Expert in modern frameworks and tools, driving significant improvements in performance and user engagement. Committed to continuous learning and excellence, with a passion for fostering innovation and collaboration.`;
 
 export const experience: Experience[] = [
   {

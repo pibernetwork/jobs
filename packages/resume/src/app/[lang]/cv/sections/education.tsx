@@ -1,5 +1,5 @@
+import Section from '../components/section';
 import { useResumeContext } from '../context/useResumeContext';
-import Section from './section';
 
 export default function Education() {
   const { labels, educations } = useResumeContext();
