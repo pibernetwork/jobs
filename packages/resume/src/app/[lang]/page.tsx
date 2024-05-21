@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { Locale, getDictionary } from './dictionaries';
-import Resume from './resume';
+import { Locale, getDictionary } from './cv/dictionaries';
+import Resume from './cv/resume';
 
 type Props = {
   params: {
