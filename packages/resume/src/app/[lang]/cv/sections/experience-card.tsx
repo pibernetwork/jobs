@@ -8,17 +8,16 @@ export default function ExperienceCard({
   entry: Experience;
 }) {
   return (
-    <div key={company} className="my-1">
+    <div key={company} className="my-1 p-1">
       <h3 className="text-lg font-bold leading-tight">{title}</h3>
       <Location name={company} location={location} />
       <Duration start={start} end={end} />
-      <ul className="">
-        {responsabilities.map((responsability) => (
-          <li key={responsability} className="text-xs">
-            - {responsability}
-          </li>
-        ))}
-      </ul>
+
+      {responsabilities.map((responsability) => (
+        <div key={responsability} className="text-xs">
+          - {responsability}
+        </div>
+      ))}
     </div>
   );
 }

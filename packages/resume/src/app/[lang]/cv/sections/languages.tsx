@@ -6,15 +6,13 @@ export default function Languages() {
 
   return (
     <Section title={labels.language}>
-      <ul>
-        {languages.map((language) => {
-          return (
-            <li key={language.title} className="text-xs">
-              {language.title} - {language.quality}
-            </li>
-          );
-        })}
-      </ul>
+      {languages.map((language) => {
+        return (
+          <div key={language.title} className="text-xs p-1">
+            {language.title} - {language.quality}
+          </div>
+        );
+      })}
     </Section>
   );
 }

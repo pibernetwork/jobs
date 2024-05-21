@@ -6,7 +6,7 @@ export default function Summary() {
 
   return (
     <Section title={labels.summary}>
-      <p className="text-xs">{summary}</p>
+      <p className="text-xs p-1">{summary}</p>
     </Section>
   );
 }

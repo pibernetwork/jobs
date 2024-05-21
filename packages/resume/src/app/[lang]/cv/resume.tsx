@@ -45,10 +45,10 @@ export default function Resume({ lang }: { lang: Locale }) {
       }}
     >
       <div>
-        <div className="m-4 h-[297mm]  w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0 print:h-screen print:w-screen print:rounded-none print:shadow-none mx-auto overflow-y-hidden">
+        <div className="m-4 h-[297mm]  w-[210mm] overflow-hidden rounded-md bg-white p-8 shadow-lg print:m-0  print:rounded-none print:shadow-none mx-auto overflow-y-hidden">
           <Header />
 
-          <div className="grid grid-cols-[4fr,2fr] divide-x">
+          <div className="grid grid-cols-[5fr,3fr] divide-x">
             <Column>
               <Summary />
               <Experiences />

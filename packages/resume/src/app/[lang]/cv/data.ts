@@ -1,8 +1,14 @@
 import dayjs from 'dayjs';
+import ActionsIcon from './icons/actions-icon';
 import AWSIcon from './icons/aws-icon';
 import BashIcon from './icons/bash-icon';
+import CloudflareIcon from './icons/cloudflare-icon';
+import DockerIcon from './icons/docker-icon';
+import GraphQLIcon from './icons/graphql-icon';
+import HonoIcon from './icons/hono-icon';
 import JavascriptIcon from './icons/javascript-icon';
 import JestIcon from './icons/jest-icon';
+import KubernetesIcon from './icons/kubernetes-icon';
 import MaterialUiIcon from './icons/material-icon';
 import MongoIcon from './icons/mongo-icon';
 import MysqlIcon from './icons/mysql-icon';
@@ -12,9 +18,11 @@ import ReactIcon from './icons/react-icon';
 import SQLiteIcon from './icons/sqlite-icon';
 import SvelteIcon from './icons/svelte-icon';
 import SvelteKitIcon from './icons/svelte-kit-icon';
+import TailwindCSSIcon from './icons/tailwindcss-icon';
 import TestCafeIcon from './icons/testcafe-icon';
 import TypescriptIcon from './icons/typescript-icon';
 import VercelIcon from './icons/vercel-icon';
+import VitestIcon from './icons/vitest-icon';
 import WebflowIcon from './icons/webflow-icon';
 import { Personal, Technology, Tools } from './types';
 
@@ -56,9 +64,9 @@ export const technology: Technology[] = [
     Icon: TypescriptIcon,
   },
   {
-    title: 'Bash',
-    age: dayjs().diff(dayjs('2013-01-01'), 'year'),
-    Icon: BashIcon,
+    title: 'TailwindCSS',
+    age: 1,
+    Icon: TailwindCSSIcon,
   },
   {
     title: 'Jest',
@@ -69,6 +77,11 @@ export const technology: Technology[] = [
     title: 'Playwright',
     age: dayjs().diff(dayjs('2022-01-01'), 'year'),
     Icon: PlaywrightIcon,
+  },
+  {
+    title: 'Vercel',
+    age: 1,
+    Icon: VercelIcon,
   },
   {
     title: 'MongoDB',
@@ -106,11 +119,6 @@ export const technology: Technology[] = [
     Icon: AWSIcon,
   },
   {
-    title: 'Vercel',
-    age: 1,
-    Icon: VercelIcon,
-  },
-  {
     title: 'TestCafe',
     age: 1,
     Icon: TestCafeIcon,
@@ -119,6 +127,46 @@ export const technology: Technology[] = [
     title: 'MaterialUi',
     age: 1,
     Icon: MaterialUiIcon,
+  },
+  {
+    title: 'Vitest',
+    age: 1,
+    Icon: VitestIcon,
+  },
+  {
+    title: 'Docker',
+    age: 1,
+    Icon: DockerIcon,
+  },
+  {
+    title: 'Kubernetes',
+    age: 1,
+    Icon: KubernetesIcon,
+  },
+  {
+    title: 'Actions',
+    age: 1,
+    Icon: ActionsIcon,
+  },
+  {
+    title: 'Cloudflare',
+    age: 1,
+    Icon: CloudflareIcon,
+  },
+  {
+    title: 'Hono',
+    age: 1,
+    Icon: HonoIcon,
+  },
+  {
+    title: 'Bash',
+    age: dayjs().diff(dayjs('2013-01-01'), 'year'),
+    Icon: BashIcon,
+  },
+  {
+    title: 'GraphQL',
+    age: 1,
+    Icon: GraphQLIcon,
   },
 ];
 

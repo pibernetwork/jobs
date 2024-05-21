@@ -69,6 +69,11 @@ export interface Tools {
   libraries: Library[];
 }
 
+export interface Achievement {
+  title: string;
+  description: string;
+}
+
 export type Metodology = string[];
 
 export interface Resume {
@@ -81,6 +86,6 @@ export interface Resume {
   technology: Technology[];
   tools: Tools[];
   educations: Education[];
-  achievements: string[];
+  achievements: Achievement[];
   languages: Language[];
 }

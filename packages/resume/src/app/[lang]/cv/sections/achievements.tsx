@@ -6,13 +6,13 @@ export default function Achievements() {
 
   return (
     <Section title={labels.achievements}>
-      <ul className="">
-        {achievements.map((achievement) => (
-          <li key={achievement} className="text-xs">
-            - {achievement}
-          </li>
+      <div className="divide-y">
+        {achievements.map(({ title, description }) => (
+          <div key={title} className="text-xs p-1">
+            - <span className="font-bold">{title}</span>: {description}
+          </div>
         ))}
-      </ul>
+      </div>
     </Section>
   );
 }
