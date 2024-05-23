@@ -48,6 +48,11 @@ export interface Education {
   location: string;
 }
 
+export interface TechnologyGroup {
+  title: string;
+  skills: Technology[];
+}
+
 export interface Technology {
   title: string;
   age: number;
@@ -83,7 +88,7 @@ export interface Resume {
   summary: string;
   experiences: Experience[];
   methodology: string[];
-  technology: Technology[];
+  technologies: TechnologyGroup[];
   tools: Tools[];
   educations: Education[];
   achievements: Achievement[];

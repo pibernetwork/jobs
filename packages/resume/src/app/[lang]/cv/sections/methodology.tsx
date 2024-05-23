@@ -6,11 +6,13 @@ export default function Methodology() {
 
   return (
     <Section title={labels.methodology}>
-      {methodology.map((book) => (
-        <div key={book} className="text-sm p-1">
-          {book}
-        </div>
-      ))}
+      <div className="p-1">
+        {methodology.map((book) => (
+          <p key={book} className="text-xs">
+            - {book}
+          </p>
+        ))}
+      </div>
     </Section>
   );
 }

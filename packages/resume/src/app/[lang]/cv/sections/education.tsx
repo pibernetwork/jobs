@@ -9,14 +9,11 @@ export default function Education() {
   return (
     <Section title={labels.education}>
       <div className="divide-y">
-        {educations.map((education) => (
-          <div key={education.title}>
-            <h3>{education.title}</h3>
-            <Location
-              name={education.university}
-              location={education.location}
-            />
-            <Duration start={education.start} end={education.end} />
+        {educations.map(({ title, university, location, start, end }) => (
+          <div key={title}>
+            <h3 className="text-sm font-bold leading-tight">{title}</h3>
+            <Location name={university} location={location} />
+            <Duration start={start} end={end} />
           </div>
         ))}
       </div>

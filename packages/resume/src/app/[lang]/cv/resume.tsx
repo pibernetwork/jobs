@@ -3,7 +3,7 @@
 import { use } from 'react';
 import Column from './components/column';
 import { ResumeContext } from './context/resume.context';
-import { personal, technology, tools } from './data';
+import { personal, technologies, tools } from './data';
 import { Locale, getDictionary } from './dictionaries';
 import Achievements from './sections/achievements';
 import Education from './sections/education';
@@ -40,7 +40,7 @@ export default function Resume({ lang }: { lang: Locale }) {
         achievements: achievements,
         methodology,
         languages,
-        technology,
+        technologies,
         tools,
       }}
     >
