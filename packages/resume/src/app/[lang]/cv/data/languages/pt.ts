@@ -1,6 +1,4 @@
-import { Achievement, Experience } from '../../types';
-
-const experience: Experience[] = [
+[
   {
     company: 'Piber Network - Freelancer',
     title: 'Full stack developer',
@@ -56,7 +54,7 @@ const experience: Experience[] = [
   },
 ];
 
-export const achievements: Achievement[] = [
+[
   {
     title: 'Performance',
     description:

@@ -1,5 +1,3 @@
-import { Achievement } from '../../types';
-
 // export const summary = `Focus on both customer and developer experience, always providing performante solution while keeping clean code.
 //   Fast peace for learning new technology and become productive`;
 
@@ -59,7 +57,7 @@ import { Achievement } from '../../types';
   },
 ];
 
-export const achievements: Achievement[] = [
+[
   {
     title: 'Leadership',
     description:

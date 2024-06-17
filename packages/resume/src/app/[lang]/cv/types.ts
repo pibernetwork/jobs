@@ -92,11 +92,6 @@ export interface Library {
   current: boolean;
 }
 
-export interface Achievement {
-  title: string;
-  description: string;
-}
-
 export type Methodology = I18NString[];
 
 export interface Resume {
@@ -108,8 +103,6 @@ export interface Resume {
   experiences: I18NExperience[];
   methodology: I18NString[];
   technologies: TechnologyGroup[];
-
   education: Education;
-  achievements: Achievement[];
   languages: Language[];
 }
