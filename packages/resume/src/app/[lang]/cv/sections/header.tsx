@@ -1,7 +1,7 @@
 import { useResumeContext } from '../context/useResumeContext';
 
 export default function Header() {
-  const { labels, personal, titles } = useResumeContext();
+  const { personal, titles, lang } = useResumeContext();
 
   const personalLinks = [
     {
@@ -32,8 +32,8 @@ export default function Header() {
       <ul className="flex divide-x justify-center">
         {titles.map((title) => {
           return (
-            <li key={title} className="px-2 text-lg">
-              {title}
+            <li key={title[lang]} className="px-2 text-lg">
+              {title[lang]}
             </li>
           );
         })}

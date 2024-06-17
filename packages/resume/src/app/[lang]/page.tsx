@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { Locale, getDictionary } from './cv/dictionaries';
+import { metadata } from './cv/data/data';
+import { Locale } from './cv/data/languages';
 import Resume from './cv/resume';
 
 type Props = {
@@ -11,10 +12,8 @@ type Props = {
 export async function generateMetadata({
   params: { lang },
 }: Props): Promise<Metadata> {
-  const intl = await getDictionary(lang);
-
   return {
-    title: intl.metadata.title,
+    title: metadata.title[lang],
   };
 }
 

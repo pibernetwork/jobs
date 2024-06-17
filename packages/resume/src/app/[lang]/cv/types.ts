@@ -1,19 +1,31 @@
 import { ReactElement, SVGProps } from 'react';
 
-export type Titles = string[];
+type I18N<T> = {
+  pt: T;
+  en: T;
+};
+
+export type I18NString = I18N<string>;
+
+export type Titles = I18NString[];
+
+export interface Metadata {
+  title: I18NString;
+}
 
 export interface Labels {
-  years: string;
-  title: string;
-  summary: string;
-  experience: string;
-  education: string;
-  achievements: string;
-  skill: string;
-  language: string;
-  technology: string;
-  tools: string;
-  methodology: string;
+  years: I18NString;
+  title: I18NString;
+  summary: I18NString;
+  experience: I18NString;
+  education: I18NString;
+  achievements: I18NString;
+  skill: I18NString;
+  language: I18NString;
+  technology: I18NString;
+  tools: I18NString;
+  methodology: I18NString;
+  to: I18NString;
 }
 
 export interface Personal {
@@ -40,7 +52,16 @@ export interface Experience {
   responsabilities: string[];
 }
 
-export interface Education {
+export interface I18NExperience {
+  company: string;
+  title: I18NString;
+  start: I18NString;
+  end: I18NString;
+  location: I18NString;
+  responsabilities: I18NString[];
+}
+
+export interface College {
   title: string;
   start: string;
   end: string;
@@ -48,8 +69,10 @@ export interface Education {
   location: string;
 }
 
+export type Education = I18N<College>;
+
 export interface TechnologyGroup {
-  title: string;
+  title: I18NString;
   skills: Technology[];
 }
 
@@ -60,8 +83,8 @@ export interface Technology {
 }
 
 export interface Language {
-  title: string;
-  quality: string;
+  title: I18NString;
+  quality: I18NString;
 }
 
 export interface Library {
@@ -69,28 +92,24 @@ export interface Library {
   current: boolean;
 }
 
-export interface Tools {
-  title: string;
-  libraries: Library[];
-}
-
 export interface Achievement {
   title: string;
   description: string;
 }
 
-export type Metodology = string[];
+export type Methodology = I18NString[];
 
 export interface Resume {
+  lang: keyof I18NString;
   personal: Personal;
   labels: Labels;
   titles: Titles;
-  summary: string;
-  experiences: Experience[];
-  methodology: string[];
+  summary: I18NString;
+  experiences: I18NExperience[];
+  methodology: I18NString[];
   technologies: TechnologyGroup[];
-  tools: Tools[];
-  educations: Education[];
+
+  education: Education;
   achievements: Achievement[];
   languages: Language[];
 }
