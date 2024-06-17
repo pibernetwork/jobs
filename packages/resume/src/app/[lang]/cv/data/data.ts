@@ -314,10 +314,13 @@ export const titles: Titles = [
 
 export const experiences: I18NExperience[] = [
   {
-    company: 'Freelancer',
-    title: { en: 'Full stack developer', pt: 'Full stack developer' },
+    company: 'Piber Netwwork',
+    title: {
+      en: 'Senior software engineer',
+      pt: 'Engenheiro de software senior',
+    },
     start: { en: 'Jun 2023', pt: 'Junho 2023' },
-    end: { en: 'Present', pt: 'presente' },
+    end: { en: 'April 2024', pt: 'Abril 2024' },
     location: {
       en: 'Remote - Porto Alegre - RS - Brazil',
       pt: 'Remoto - Porto Alegre - RS - Brasil',
