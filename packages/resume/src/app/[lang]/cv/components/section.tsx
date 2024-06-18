@@ -7,11 +7,11 @@ export default function Section({
 }) {
   return (
     <div className="my-4">
-      <h2 className="text-base font-bold leading-tight text-center text-underline my-2">
+      <h2 className="text-base font-bold leading-tight text-center text-underline mb-2">
         {title}
       </h2>
       <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-      {children}
+      <div className="px-1">{children}</div>
     </div>
   );
 }

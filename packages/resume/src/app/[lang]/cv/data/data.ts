@@ -8,7 +8,7 @@ import DockerIcon from '../icons/docker-icon';
 import GitIcon from '../icons/git-icon';
 import GraphQLIcon from '../icons/graphql-icon';
 import HonoIcon from '../icons/hono-icon';
-import JavascriptIcon from '../icons/javascript-icon';
+import JavaScriptIcon from '../icons/javascript-icon';
 import JestIcon from '../icons/jest-icon';
 import JiraIcon from '../icons/jira-icon';
 import KubernetesIcon from '../icons/kubernetes-icon';
@@ -16,6 +16,7 @@ import MongoIcon from '../icons/mongo-icon';
 import MysqlIcon from '../icons/mysql-icon';
 import NextJSIcon from '../icons/nextjs-icon';
 import NodeJSIcon from '../icons/nodejs-icon';
+import PHPIcon from '../icons/php-icon';
 import PlaywrightIcon from '../icons/playwright';
 import ReactIcon from '../icons/react-icon';
 import SlackIcon from '../icons/slack-icon';
@@ -23,7 +24,7 @@ import SQLiteIcon from '../icons/sqlite-icon';
 import SvelteIcon from '../icons/svelte-icon';
 import TailwindCSSIcon from '../icons/tailwindcss-icon';
 import TestCafeIcon from '../icons/testcafe-icon';
-import TypescriptIcon from '../icons/typescript-icon';
+import TypeScriptIcon from '../icons/typescript-icon';
 import VercelIcon from '../icons/vercel-icon';
 import VitestIcon from '../icons/vitest-icon';
 import {
@@ -50,7 +51,7 @@ export const personal: Personal = {
   name: 'Maurício Piber Fão',
   email: 'mauriciopiber@gmail.com',
   phone: {
-    en: { label: '55 (51) 994599119', value: '5551994599119' },
+    en: { label: '+55 (51) 994599119', value: '5551994599119' },
     pt: { label: '(51) 994599119', value: '51994599119' },
   },
   linkedin:
@@ -83,8 +84,8 @@ export const labels: Labels = {
 };
 
 export const summary: I18NString = {
-  pt: 'Desenvolvedor profissional com 13 anos de experiência na área e 12 anos de trabalho remoto, especializado em tecnologia web, Javascript, Typescript, NodeJS, React e Next.JS. Com forte fundamentos de boas práticas, performance e segurança. Trabalho do levantamento de requisitos até a entrega final, sempre buscando soluções eficientes. Dedicado a entregar produtos de alta qualidade e dentro do prazo, sou motivado por aprender tecnologias e pela constante evolução.',
-  en: `Professional full stack software engineer with 13+ years of experience, specialized in web technologies like JavaScript, TypeScript, NodeJS, React. Emphasizing good practices, performance, clean code, and security, I've worked on projects from conception to realization, always seeking efficient and cost-effective solutions. Dedicated to delivering high quality on schedule, I am motivated by technical challenges and the constant evolution in the technology field.`,
+  pt: 'Desenvolvedor profissional com 13 anos de experiência na área e 12 anos de trabalho remoto, especializado em tecnologia web, JavaScript, TypeScript, NodeJS, React e Next.js. Com fortes fundamentos de boas práticas, performance e segurança. Trabalho do levantamento de requisitos até a entrega final, sempre buscando soluções eficientes. Dedicado a entregar produtos de alta qualidade e dentro do prazo, sou motivado por aprender tecnologias e pela constante evolução.',
+  en: `Full stack software engineer with 13 years of experience and 12 years of remote work, specialized in web technologies like JavaScript, TypeScript, NodeJS, React. Emphasizing good practices, performance, clean code, and security, I've worked on projects from conception to realization, always seeking efficient and cost-effective solutions. Dedicated to delivering high quality on schedule, I am motivated by technical challenges and the constant evolution.`,
 };
 
 export const technologies: TechnologyGroup[] = [
@@ -94,20 +95,20 @@ export const technologies: TechnologyGroup[] = [
       {
         title: 'JavaScript',
         age: dayjs().diff(dayjs('2011-01-01'), 'year'),
-        Icon: JavascriptIcon,
+        Icon: JavaScriptIcon,
       },
       {
         title: 'TypeScript',
         age: dayjs().diff(dayjs('2020-06-01'), 'year'),
-        Icon: TypescriptIcon,
+        Icon: TypeScriptIcon,
       },
       {
-        title: 'ReactJS',
+        title: 'React',
         age: dayjs().diff(dayjs('2017-09-01'), 'year'),
         Icon: ReactIcon,
       },
       {
-        title: 'NextJS',
+        title: 'Next.js',
         age: dayjs().diff(dayjs('2019-06-01'), 'year'),
         Icon: NextJSIcon,
       },
@@ -155,6 +156,11 @@ export const technologies: TechnologyGroup[] = [
         title: 'NodeJS',
         age: 1,
         Icon: NodeJSIcon,
+      },
+      {
+        title: 'PHP',
+        age: 1,
+        Icon: PHPIcon,
       },
     ],
   },
@@ -273,7 +279,7 @@ export const technologies: TechnologyGroup[] = [
 
 export const education: Education = {
   en: {
-    title: 'BS in Computer Science',
+    title: 'BSc in Computer Science',
     university: 'Unisinos',
     location: 'São Leopoldo - RS - Brazil',
     start: 'Mar 2008',
@@ -282,7 +288,7 @@ export const education: Education = {
   pt: {
     title: 'Bacharelado em Ciência da Computação',
     university: 'Unisinos',
-    location: 'São Leopoldo - RS - Brazil',
+    location: 'São Leopoldo - RS - Brasil',
     start: 'Março 2008',
     end: 'Novembro 2011',
   },
@@ -294,7 +300,7 @@ export const education: Education = {
 export const methodology: Methodology = [
   { pt: 'Kanban', en: 'Kanban' },
   { pt: 'Scrum', en: 'Scrum' },
-  { pt: 'Desenvolvimento guiado à teste (TDD)', en: 'TDD' },
+  { pt: 'Desenvolvimento guiado por teste (TDD)', en: 'TDD' },
 ];
 
 export const languages: Language[] = [
@@ -304,16 +310,16 @@ export const languages: Language[] = [
   },
   {
     title: { pt: 'Inglês', en: 'English' },
-    quality: { pt: 'Intermediário', en: 'Upper Intermediate' },
+    quality: { pt: 'Intermediário', en: 'B2' },
   },
 ];
 
 export const titles: Titles = [
-  { en: 'Full stack', pt: 'Full stack' },
-  { en: 'Javascript', pt: 'Javascript' },
+  { en: 'Full Stack', pt: 'Full Stack' },
+  { en: 'JavaScript', pt: 'JavaScript' },
   { en: 'React', pt: 'React' },
   { en: 'NodeJS', pt: 'NodeJS' },
-  { en: 'Typescript', pt: 'Typescript' },
+  { en: 'TypeScript', pt: 'TypeScript' },
 ];
 
 export const experiences: I18NExperience[] = [
@@ -323,8 +329,8 @@ export const experiences: I18NExperience[] = [
       en: 'Senior software engineer',
       pt: 'Desenvolvedor Full Stack Sênior',
     },
-    start: { en: 'Jan 2024', pt: 'Janeiro 2024' },
-    end: { en: 'Jun 2024', pt: 'Jun 2024' },
+    start: { en: 'Aug 2023', pt: 'Agosto 2023' },
+    end: { en: 'Jun 2024', pt: 'Junho 2024' },
     location: {
       en: 'Remote - Porto Alegre - RS - Brazil',
       pt: 'Remoto - Porto Alegre - RS - Brasil',
@@ -335,16 +341,16 @@ export const experiences: I18NExperience[] = [
     },
     skills: [
       'React',
-      'NextJS',
-      'Svelte-Kit',
-      'Typescript',
+      'Next.js',
+      'SvelteKit',
+      'TypeScript',
       'NodeJS',
       'MongoDB',
     ],
     achievements: [
       {
-        en: 'Engineered a smart calculator for meal tracking and dieting using TypeScript and PDFKit.',
-        pt: 'Desenvolvimento de uma calculadora inteligente para o bem-estar e rastreamento de refeições e dieta usando TypeScript e PDFKit.',
+        en: 'Engineered a smart calculator for meal tracking and dieting using TypeScript.',
+        pt: 'Desenvolvimento de uma calculadora inteligente para o bem-estar e rastreamento de refeições e dieta usando TypeScript.',
       },
       {
         en: 'Developed a solution for CTA buttons on a client’s marketing website, enhancing user experience and increasing conversion rates by 40%.',
@@ -355,7 +361,7 @@ export const experiences: I18NExperience[] = [
         pt: 'Utilização de prompts de IA, GitHub Copilot e Codium para aumentar a produtividade com a geração de código automatizado, reduzindo o tempo de codificação.',
       },
       {
-        en: 'Prototyping for evaluated the capabilities of the latest web development tools, including Svelte, SvelteKit, React 18, and Next.js 14, to determine the most suitable options for long-term needs and optimal performance.',
+        en: 'Development of a prototypal web application using the most recent tools including Svelte, SvelteKit, React 18, and Next.js 14 to assess their capabilities and determine the most suitable options for long-term needs and performance optimization.',
         pt: 'Prototipação para avaliação das capacidades das ferramentas mais recentes de desenvolvimento web, incluindo Svelte, SvelteKit, React 18 e Next.js 14, para determinar as opções mais adequadas às necessidades de longo prazo e máximo desempenho.',
       },
     ],
@@ -369,20 +375,21 @@ export const experiences: I18NExperience[] = [
     start: { en: 'Dec 2021', pt: 'Dezembro 2021' },
     end: { en: 'Jul 2023', pt: 'Julho 2023' },
     location: {
-      en: 'New York, New York, United States',
-      pt: 'Nova York, Nova York, Estados Unidos',
+      en: 'Remote - New York, New York, United States',
+      pt: 'Remoto - Nova York, Nova York, Estados Unidos',
     },
     description: {
-      en: 'Leading Webflow development company. I worked on the product team as the development and maintenance leader.',
+      en: 'Leading Webflow development company. I worked on the product team as senior full stack engineer.',
       pt: 'Empresa líder em desenvolvimento Webflow. Atuei na equipe de produtos como desenvolvedor sênior.',
     },
     skills: [
-      'Javascript',
+      'JavaScript',
       'TypeScript',
-      'HonoJS',
+      'Svelte',
+      'Hono',
       'React',
       'Cloudflare',
-      'SQLIte',
+      'SQLite',
       'NPM',
     ],
     achievements: [
@@ -395,44 +402,47 @@ export const experiences: I18NExperience[] = [
         pt: 'Criação de novas funcionalidades e manutenção de recursos existentes da biblioteca no-code de acordo com feedback da comunidade.',
       },
       {
-        en: '',
-        pt: 'Adoçao de Typescript em projeto existente escrito em Javascript com resultado de diminuição de tempo de correção das tarefas.',
+        en: 'Adoption of TypeScript in an existing project written in JavaScript, resulting in reduced time for refactoring.',
+        pt: 'Adoção de TypeScript em projeto existente escrito em JavaScript com resultado de diminuição de tempo de refatoração.',
       },
       {
-        en: 'Integrade authentication, APIs, complex data syncronization into a SaaS project focusing on the synchronization between no-code platforms resulting in more confidence into the project.',
-        pt: 'Integraçao de autenticação, APIs, sincronização complexa no projeto SaaS de sincronização de dados entre diferentes plataformas no-code.',
+        en: 'Integrated authentication using JWT, APIs, complex data synchronization into a SaaS project focusing on the synchronization between platforms.',
+        pt: 'Integração de autenticação utilizando JWT, APIs, sincronização complexa no projeto SaaS de sincronização de dados entre diferentes plataformas.',
       },
       {
         en: 'Provided mentoring and support, addressing inquiries from webflow and JavaScript developers and identifying solutions to ensure timely and quality deliveries.',
-        pt: 'Mentoria e suporte para desenvolvedores webflow e demais desenvolvedores javascript, como no apontamento de soluções para garantir qualidade na entrega.',
+        pt: 'Mentoria e suporte para desenvolvedores webflow e demais desenvolvedores JavaScript, como no apontamento de soluções para garantir qualidade na entrega.',
       },
     ],
   },
   {
     company: 'Wing',
     title: {
-      en: 'Full stack developer',
+      en: 'Senior full stack engineer',
       pt: 'Desenvolvedor Full Stack Sênior',
     },
     start: { en: 'May 2021', pt: 'Maio 2021' },
     end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
-    location: { en: 'São Paulo - SP - Brazil', pt: 'São Paulo - SP - Brazil' },
+    location: {
+      en: 'Remote - São Paulo - SP - Brazil',
+      pt: 'Remoto - São Paulo - SP - Brasil',
+    },
     description: {
-      en: `Working with a team of 6 members using Kanban, being responsable for leading the development and maintence of core websites designed for marketing campaings and portal with SEO`,
+      en: `Collaborated with a team of 6 members using Kanban, responsible for the development and maintenance of core operational websites.`,
       pt: `Fábrica de software, trabalhava em um time de 6 membros com Kanban, sendo responsável pelo desenvolvimento e manutencão da estrutura dos sites criados para campanhas de marketing e portal com SEO`,
     },
     skills: [
       'Kanban',
       'React',
       'Redux',
-      'NextJS',
+      'Next.js',
       'Figma',
-      'Typescript',
+      'TypeScript',
       'Strapi',
       'MySQL',
       'AWS',
       'Git',
-      'Github',
+      'GitHub',
     ],
     achievements: [
       {
@@ -444,7 +454,7 @@ export const experiences: I18NExperience[] = [
         pt: 'Pesquisa e implementação de blog utilizando headless CMS para maior flexibilidade e autonomia do time de Marketing.',
       },
       {
-        en: 'Improvements on the Marketing website based on team feedback, resulting in increased sales conversion in a weekly basis.',
+        en: 'Enhanced the Marketing website based on team feedback, which increased sales conversions on a weekly basis.',
         pt: 'Melhorias no site de Marketing de acordo com feedback do time e aumento da conversão de vendas em ciclos semanais.',
       },
     ],
@@ -452,67 +462,78 @@ export const experiences: I18NExperience[] = [
   {
     company: 'OMEGA',
     title: {
-      en: 'Full stack developer',
-      pt: 'Desenvolvedor Full Stack Sênior',
+      en: 'Senior full stack engineer',
+      pt: 'Desenvolvedor Full Stack Lead',
     },
-    start: { en: 'Oct 2019', pt: 'Octubro 2019' },
+    start: { en: 'Oct 2019', pt: 'Outubro 2019' },
     end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
-    location: { en: 'São Paulo - SP - Brazil', pt: 'São Paulo - SP - Brazil' },
+    location: {
+      en: 'Remote - São Paulo - SP - Brazil',
+      pt: 'Remoto - São Paulo - SP - Brasil',
+    },
     description: {
-      en: `Leading the development for the marketing team, which included 15 people. We used Scrum, React, NextJS, Figma, Typescript, AWS, Webflow and many other tools.`,
-      pt: `Liderei o desenvolvimento para o time de marketing, que incluia 15 pessoas. Nos usavamos Scrum, React, NextJS, Figma, Typescript, AWS, Webflow e muitas outras ferramentas.`,
+      en: `Leading the development for the marketing team, which included 15 people.`,
+      pt: `Empresa líder em venda de planos de internet fixa e móvel. Exercia papel de lider do desenvolvimento para o time de marketing, que incluia 15 pessoas de diferentes áreas`,
     },
     skills: [
+      'Scrum',
       'Kanban',
+      'Trello',
+      'Clickup',
       'React',
       'Redux',
-      'NextJS',
+      'Next.js',
       'Figma',
-      'Typescript',
+      'TypeScript',
       'AWS',
       'Bash',
       'Webflow',
       'Git',
-      'Github',
+      'GitHub',
+      'Storybook',
     ],
     achievements: [
       {
-        en: 'Introduction of Next.js technology with incremental substitution culminating in total migration to React with NextJS, which reduced costs by 20%, improving the time to implement new features and improving campaign performance by 50%.',
-        pt: 'Introdução da tecnologia Next.JS, com substituição incrementais até total migração para Next.JS 9, diminuindo tempo para implementação de novas funcionalidades e melhorando a performance das campanhas em 50%.',
+        en: 'Introduction of Next.js technology with incremental substitution culminating in total migration to React with Next.js, which reduced costs by 20%, improving the time to implement new features and improving campaign performance by 50%.',
+        pt: 'Introdução da tecnologia Next.js, com substituição incrementais dos sites até conclusão de migração para React, diminuindo tempo para implementação de novas funcionalidades e melhorando a performance das campanhas em 50%.',
+      },
+      {
+        en: 'Creation of a design system with Storybook for better visualization of components on the site and higher consistency of design.',
+        pt: 'Criação de Design System com Storybook para melhor visualização de componentes do site e maior consistência de design.',
       },
       {
         en: 'Improvements on ETLs used for processing and syncing data from various code bases, achieving a 50% reduction in execution time and enhanced data reliability',
-        pt: 'Melhorias em ETLs para processar e sincronizar informação de diferentes bases de dados com melhoras de 50% em tempo de execução e maior confiabilidade de dados.',
+        pt: 'Melhorias em ETLs para processar e sincronizar informação de diferentes bases de dados com melhorias de 50% em tempo de execução e maior confiabilidade de dados.',
       },
       {
         en: 'Applied improvements and best practices on conversion pages, raising the Google Quality Score from 2 to 9. The main pages averaged 90 points on Page Speed Insights Mobile, with some achieving 100 points, surpassing all standards in Web Core Vitals.',
         pt: 'Aplicação de melhorias e melhores práticas de performance nas páginas de conversão obtendo melhora de 2 para 9 no Google Quality Score. As principais páginas alcançaram uma média de 90 pontos no Page Speed Insights mobile, com algumas atingindo 100 pontos, passando todos os sites nos Web Core Vitals.',
       },
       {
-        en: 'Development of monitoring tool to check the health of websites and e-commerce systems that reduced response time to incindents 90%.',
-        pt: 'Desenvolvimento de ferramenta de monitoramento para checar a saude dos sites e sistemas de e-commerce que reduziu o tempo de resposta para 90%.',
+        en: 'Development of monitoring tool to check the health of websites and e-commerce systems that reduced response time to incidents to 90%.',
+        pt: 'Desenvolvimento de ferramenta de monitoramento para checar a saúde dos sites e sistemas de e-commerce que reduziu o tempo de resposta para 90%.',
       },
       {
-        en: 'Development of tool for monitoring SEO performance for major keywords reducing the response time to 90%.',
+        en: 'Development of tool for monitoring SEO and AdWords performance for major keywords reducing the response time to 90%.',
         pt: 'Desenvolvimento de ferramenta para monitoramento de performance de SEO para palavras-chave principais reduzindo o tempo de resposta para 90%.',
       },
       {
-        en: 'Development of tool to monitoring own and competitors websites performance in major metrics and web core vitals to achieve best results overall.',
-        pt: 'Desenvolviento de ferramenta para monitorar a performance de sites próprios e competidores no conjunto de métricas e Web Core Vitals para alcancar melhores resultados.',
+        en: 'Development of a tool for monitoring our own and competitors websites performance in major metrics and web core vitals to achieve optimal results.',
+        pt: 'Desenvolvimento de ferramenta para monitorar a performance de sites próprios e competidores no conjunto de métricas e Web Core Vitals para alcancar melhores resultados.',
       },
       {
-        en: 'Created specialized pages from Figma to NextJS for AdWords campaigns and affiliates, significantly increasing the sales conversion rate.',
+        en: 'Created specialized pages from Figma to Next.js for AdWords campaigns and affiliates, significantly increasing the sales conversion rate.',
         pt: 'Criado páginas específicas para campanhas de AdWords e afiliados, aumentando a taxa de vendas.',
       },
     ],
   },
   {
-    company: 'Piber Netwwork',
+    company: 'Piber Network',
     title: {
       en: 'Software engineer',
-      pt: 'Desenvolvimento Fullstack',
+      pt: 'Desenvolvedor Full Stack',
     },
-    start: { en: 'Set 2013', pt: 'Setembro 2013' },
+    start: { en: 'Sep 2013', pt: 'Setembro 2013' },
     end: { en: 'Nov 2019', pt: 'Novembro 2019' },
     location: {
       en: 'Remote - Porto Alegre - RS - Brazil',
@@ -521,7 +542,7 @@ export const experiences: I18NExperience[] = [
     skills: [
       'PHP',
       'Zend Framework 1-2-3',
-      'Javascript',
+      'JavaScript',
       'MySQL',
       'React',
       'Angular',
@@ -533,7 +554,7 @@ export const experiences: I18NExperience[] = [
     achievements: [
       {
         en: 'Integrated websites with lead capture services requiring JavaScript and API utilization.',
-        pt: 'Integração de sites com serviços específicos que demandam programação Javascript e utilização de APIs para captura de Leads.',
+        pt: 'Integração de sites com serviços específicos que demandam programação JavaScript e utilização de APIs para captura de Leads.',
       },
       {
         en: 'Developed custom code for Webflow sites, enhancing functionality and user experience.',
@@ -560,8 +581,8 @@ export const experiences: I18NExperience[] = [
         pt: 'Realização de testes e QA, tanto manuais quanto automatizados em projetos já existentes.',
       },
       {
-        en: 'Developed multiple e-commerce platforms, selling products ranging from digital goods to food.',
-        pt: 'Desenvolvimento de diversões e-commerces para venda de produtos digitais até alimentos.',
+        en: 'Developed multiple e-commerce platforms, selling products ranging from digital goods to food using own code generator.',
+        pt: 'Desenvolvimento de diversos e-commerces para venda de produtos digitais até alimentos utilizando gerador de sistema próprio.',
       },
       {
         en: 'Developed a business intelligence system to replace Excel spreadsheets with a unified system for more integrated data analysis.',

@@ -21,10 +21,10 @@ export default function ExperienceItem({
 
   return (
     <div key={company} className="my-1 p-3 flex flex-col">
-      <h3 className="text-lg font-bold leading-tight text-center mb-1">
+      <h3 className="text-sm font-bold leading-tight text-center mb-1">
         {title[lang]}
       </h3>
-      <div className="flex justify-between">
+      <div className="flex justify-between mb-1">
         <Location name={company} location={location[lang]} />
         <Duration start={start[lang]} end={end[lang]} />
       </div>

@@ -10,12 +10,10 @@ export default function Education() {
 
   return (
     <Section title={labels.education[lang]}>
-      <div className="divide-y">
-        <div key={collage.title}>
-          <h3 className="text-sm font-bold leading-tight">{collage.title}</h3>
-          <Location name={collage.university} location={collage.location} />
-          <Duration start={collage.start} end={collage.end} />
-        </div>
+      <div key={collage.title} className="p-2">
+        <h3 className="text-sm font-bold leading-tight">{collage.title}</h3>
+        <Location name={collage.university} location={collage.location} />
+        <Duration start={collage.start} end={collage.end} />
       </div>
     </Section>
   );

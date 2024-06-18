@@ -13,11 +13,11 @@ export default function Header() {
       link: `mailto:${personal.email}`,
     },
     {
-      title: 'Linkedin',
+      title: 'LinkedIn',
       link: personal.linkedin,
     },
     {
-      title: 'Github',
+      title: 'GitHub',
       link: personal.github,
     },
 
