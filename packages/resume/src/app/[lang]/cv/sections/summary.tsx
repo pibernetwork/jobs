@@ -6,7 +6,7 @@ export default function Summary() {
 
   return (
     <Section title={labels.summary[lang]}>
-      <p className="text-xs p-1">{summary[lang]}</p>
+      <p className="text-xs py-1">{summary[lang]}</p>
     </Section>
   );
 }

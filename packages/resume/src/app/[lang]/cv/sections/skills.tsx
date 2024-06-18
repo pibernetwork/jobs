@@ -8,9 +8,9 @@ export default function Skills() {
     <Section title={labels.skill[lang]}>
       <div className="p-1">
         {technologies.map(({ title, skills }) => (
-          <div key={title[lang]}>
-            <h3 className="text-xs font-bold">{title[lang]}</h3>
+          <div key={title[lang]} className="flex">
             <ul className="flex flex-wrap gap-2 p-2">
+              <li className="text-xs font-bold">{title[lang]}</li>
               {skills.map(({ title, age, Icon }) => (
                 <li key={title} className="text-xs flex items-center underline">
                   <span className="mr-1" title={title}>

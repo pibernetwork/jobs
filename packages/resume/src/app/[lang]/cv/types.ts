@@ -7,6 +7,8 @@ type I18N<T> = {
 
 export type I18NString = I18N<string>;
 
+export type I18NPhone = I18N<{ label: string; value: string }>;
+
 export type Titles = I18NString[];
 
 export interface Metadata {
@@ -35,10 +37,9 @@ export interface Personal {
   instagram: string;
   facebook: string;
   github: string;
+  phone: I18NPhone;
   location: {
-    city: string;
-    state: string;
-    country: string;
+    label: I18NString;
     maps: string;
   };
 }
@@ -46,6 +47,7 @@ export interface Personal {
 export interface I18NExperience {
   company: string;
   title: I18NString;
+  skills: string[];
   start: I18NString;
   end: I18NString;
   location: I18NString;
