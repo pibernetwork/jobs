@@ -325,39 +325,53 @@ export const experiences: I18NExperience[] = [
       en: 'Remote - Porto Alegre - RS - Brazil',
       pt: 'Remoto - Porto Alegre - RS - Brasil',
     },
-    responsabilities: [
+    description: {
+      en: 'Self-employed',
+      pt: 'Autônomo',
+    },
+    achievements: [
       {
-        en: 'Development of a smart calculator for dieting and meal tracking using Typescript',
-        pt: 'Desenvolvimento de uma calculadora inteligente para o bem-estar e rastreamento de refeições usando Typescript',
+        en: 'Engineered a smart calculator for meal tracking and dieting using TypeScript and PDFKit.',
+        pt: 'Desenvolvi uma calculadora inteligente para o bem-estar e rastreamento de refeições usando TypeScript.',
       },
       {
-        en: 'Development of solution for click to action for marketing website for improving user experience.',
-        pt: 'Desenvolvimento de solução para CTAs em site de marketing para melhorar a experiência do usuário.',
+        en: 'Developed a solution for CTA buttons on a client’s marketing website, enhancing user experience and increasing conversion rates by 40%.',
+        pt: 'Desenvolvi uma solução para CTAs em um site de marketing que melhorou a experiência do usuário.',
       },
       {
-        en: 'Exploring utilization of IA prompts to improve productivity with automate code generation.',
-        pt: 'Exploração da utilização de prompts de IA para aumentar produtividade com geração de código automatizado.',
+        en: 'Leveraged AI prompts, GitHub Copilot, and Codium to enhance productivity through automated code generation, reducing coding time by 50%.',
+        pt: 'Utilizei prompts de IA, GitHub Copilot e Codium para aumentar a produtividade com a geração de código automatizado, reduzindo o tempo de codificação.',
       },
       {
-        en: 'Development of an internal tool used for personal growth and improvement, as well as applying clean code and improving overall skills.',
-        pt: 'Desenvolvimento de uma ferramenta interna para crescimento pessoal e melhoria, bem como aplicação de código limpo e melhoria de habilidades.',
+        en: 'Evaluated the capabilities of the latest web development tools, including Svelte, SvelteKit, React 18, and Next.js 14, to determine the most suitable options for long-term needs and optimal performance.',
+        pt: 'Avaliei as capacidades das ferramentas mais recentes de desenvolvimento web, incluindo Svelte, SvelteKit, React 18 e Next.js 14, para determinar as opções mais adequadas para as necessidades de longo prazo e desempenho ótimo.',
       },
     ],
   },
   {
     company: 'Finsweet',
-    title: { en: 'Full stack developer', pt: 'Full stack developer' },
+    title: {
+      en: 'Senior full stack engineer',
+      pt: 'Engenheiro full stack senior',
+    },
     start: { en: 'Dec 2021', pt: 'Dezembro 2021' },
     end: { en: 'Jul 2023', pt: 'Julho 2023' },
-    location: { en: 'New York, New York, United States', pt: '' },
-    responsabilities: [
+    location: {
+      en: 'New York, New York, United States',
+      pt: 'Nova York, Nova York, Estados Unidos',
+    },
+    description: {
+      en: 'Leading Webflow development company. I worked on the product team as the development and maintenance leader, utilizing TypeScript, HonoJS, React, Cloudflare, NPM, among other tools.',
+      pt: 'Companhia líder em desenvolvimento Webflow. Atuei na equipe de produtos como líder de desenvolvimento e manutenção, utilizando TypeScript, HonoJS, React, Cloudflare, NPM, entre outras ferramentas.',
+    },
+    achievements: [
       {
-        en: 'Developed automated support for no-code libraries, resulting in fewer support tickets and facilitating tool adoption.',
-        pt: 'Desenvolvido ferramenta para suporte de instalação de bibliotecas no-code resultando em diminuição de volume de tickets de suporte abertos e facilitando adoção das ferramentas.',
+        en: 'Development of automated support for no-code libraries, resulting in fewer support tickets and facilitating tool adoption.',
+        pt: 'Desenvolvido ferramenta para suporte de instalação de bibliotecas no-code com resultado de diminuição de volume de tickets de suporte abertos e facilitando adoção das ferramentas.',
       },
       {
-        en: 'Developed new features and maintained existing components of the no-code library based on community feedback.',
-        pt: 'Criado novos recursos bem como manutenção em recursos existentes da biblioteca no-code de acordo com feedback da comunidade.',
+        en: 'Creation of new features and maintained existing components of the no-code library based on community feedback.',
+        pt: 'Criação de novas funcionalidades e manutenção de recursos existentes da biblioteca no-code de acordo com feedback da comunidade.',
       },
       {
         en: 'Integrated TypeScript and developed functionalities for a SaaS project focusing on the synchronization of no-code platforms.',
@@ -375,7 +389,11 @@ export const experiences: I18NExperience[] = [
     start: { en: 'May 2021', pt: 'Maio 2021' },
     end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
     location: { en: 'São Paulo - SP - Brazil', pt: 'São Paulo - SP - Brazil' },
-    responsabilities: [
+    description: {
+      en: `Working with a team of 6 members using Kanban, being responsable for leading the development and maintence of core websites designed for marketing campaings and portal with SEO. We used React, NextJS, Figma, Typescript, Strapi, AWS, and many other tools.`,
+      pt: ``,
+    },
+    achievements: [
       {
         en: 'Technical contribution to SEO adjustments that resulted in improvements on major pages in Google search results.',
         pt: 'Contribuição técnica para implementação de ajustes de SEO que resultaram em melhorias das principais páginas no ranking do google.',
@@ -400,13 +418,13 @@ export const experiences: I18NExperience[] = [
     start: { en: 'Oct 2019', pt: 'Octubro 2019' },
     end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
     location: { en: 'São Paulo - SP - Brazil', pt: 'São Paulo - SP - Brazil' },
-    responsabilities: [
+    description: {
+      en: `Leading the development for the marketing team, which included 15 people. We used React, NextJS, Figma, Typescript, AWS, Webflow and many other tools.`,
+      pt: ``,
+    },
+    achievements: [
       {
-        en: 'Support for the whole Marketing department dedicated to internet fiber sales, that covers 7 websites, 1 e-commerce, a medium size team and integration with sales, backoffice and managers.',
-        pt: 'Suporte total para área de Marketing da empresa dedicada ao mercado fixo, que compreendia 7 sites, 1 e-commerce, 15 pessoas e integração com a área de vendas, backoffice e gerência.',
-      },
-      {
-        en: 'Introduction of Next.js technology with incremental substitution culminating in total migration to React with NextJS, which reduced costs and implementation times for new features while improving campaign performance by 50%.',
+        en: 'Introduction of Next.js technology with incremental substitution culminating in total migration to React with NextJS, which reduced costs by 20%, improving the time to implement new features and improving campaign performance by 50%.',
         pt: 'Introdução da tecnologia Next.JS, com substituição incrementais até total migração para Next.JS 9, diminuindo tempo para implementação de novas funcionalidades e melhorando a performance das campanhas em 50%.',
       },
       {
@@ -418,7 +436,19 @@ export const experiences: I18NExperience[] = [
         pt: 'Aplicação de melhorias e melhores práticas de performance nas páginas de conversão obtendo melhora de 2 para 9 no Google Quality Score. As principais páginas alcançaram uma média de 90 pontos no Page Speed Insights mobile, com algumas atingindo 100 pontos, passando todos os sites nos Web Core Vitals.',
       },
       {
-        en: 'Created specialized pages for AdWords campaigns and affiliates, significantly increasing the sales conversion rate.',
+        en: 'Development of monitoring tool to check the health of websites and e-commerce systems that reduced response time to incindents 90%.',
+        pt: '',
+      },
+      {
+        en: 'Development of tool for monitoring SEO performance for major keywords reducing the response time to 90%.',
+        pt: '',
+      },
+      {
+        en: 'Development of tool to monitoring own and competitors websites performance in major metrics and web core vitals to achieve best results overall.',
+        pt: '',
+      },
+      {
+        en: 'Created specialized pages from Figma to NextJS for AdWords campaigns and affiliates, significantly increasing the sales conversion rate.',
         pt: 'Criado páginas específicas para campanhas de AdWords e afiliados, aumentando a taxa de vendas.',
       },
     ],

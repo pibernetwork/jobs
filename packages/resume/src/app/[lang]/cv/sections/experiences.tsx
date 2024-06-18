@@ -1,6 +1,6 @@
 import Section from '../components/section';
 import { useResumeContext } from '../context/useResumeContext';
-import ExperienceCard from './experience-card';
+import ExperienceItem from './expericence-item';
 
 export default function Experiences() {
   const { labels, experiences, lang } = useResumeContext();
@@ -9,7 +9,7 @@ export default function Experiences() {
     <Section title={labels.experience[lang]}>
       <div className="divide-y">
         {experiences.map((entry) => (
-          <ExperienceCard key={entry.title[lang]} entry={entry} />
+          <ExperienceItem key={entry.title[lang]} entry={entry} />
         ))}
       </div>
     </Section>

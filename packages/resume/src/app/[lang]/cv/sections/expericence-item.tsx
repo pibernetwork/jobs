@@ -3,8 +3,8 @@ import Location from '../components/location';
 import { useResumeContext } from '../context/useResumeContext';
 import { I18NExperience } from '../types';
 
-export default function ExperienceCard({
-  entry: { company, title, start, end, responsabilities, location },
+export default function ExperienceItem({
+  entry: { company, title, start, end, achievements, location, description },
 }: {
   entry: I18NExperience;
 }) {
@@ -15,10 +15,10 @@ export default function ExperienceCard({
       <h3 className="text-lg font-bold leading-tight">{title[lang]}</h3>
       <Location name={company} location={location[lang]} />
       <Duration start={start[lang]} end={end[lang]} />
-
-      {responsabilities.map((responsability) => (
-        <div key={responsability[lang]} className="text-xs">
-          - {responsability[lang]}
+      <div className="text-xs my-1">{description[lang]}</div>
+      {achievements.map((achievements) => (
+        <div key={achievements[lang]} className="text-xs">
+          - {achievements[lang]}
         </div>
       ))}
     </div>

@@ -43,22 +43,14 @@ export interface Personal {
   };
 }
 
-export interface Experience {
-  company: string;
-  title: string;
-  start: string;
-  end: string;
-  location: string;
-  responsabilities: string[];
-}
-
 export interface I18NExperience {
   company: string;
   title: I18NString;
   start: I18NString;
   end: I18NString;
   location: I18NString;
-  responsabilities: I18NString[];
+  description: I18NString;
+  achievements: I18NString[];
 }
 
 export interface College {
