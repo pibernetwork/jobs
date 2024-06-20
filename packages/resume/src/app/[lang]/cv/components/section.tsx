@@ -6,7 +6,7 @@ export default function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="my-4">
+    <div className="my-3">
       <h2 className="text-base font-bold leading-tight text-center text-underline mb-2">
         {title}
       </h2>
