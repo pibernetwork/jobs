@@ -329,8 +329,8 @@ export const experiences: I18NExperience[] = [
       en: 'Senior software engineer',
       pt: 'Desenvolvedor Full Stack Sênior',
     },
-    start: { en: 'Aug 2023', pt: 'Agosto 2023' },
-    end: { en: 'Jun 2024', pt: 'Junho 2024' },
+    start: { en: 'Aug 2023', pt: 'Agosto de 2023' },
+    end: { en: 'Jun 2024', pt: 'Junho de 2024' },
     location: {
       en: 'Remote - Porto Alegre - RS - Brazil',
       pt: 'Remoto - Porto Alegre - RS - Brasil',
@@ -372,8 +372,8 @@ export const experiences: I18NExperience[] = [
       en: 'Senior full stack engineer',
       pt: 'Desenvolvedor Full Stack Sênior',
     },
-    start: { en: 'Dec 2021', pt: 'Dezembro 2021' },
-    end: { en: 'Jul 2023', pt: 'Julho 2023' },
+    start: { en: 'Dec 2021', pt: 'Dezembro de 2021' },
+    end: { en: 'Jul 2023', pt: 'Julho de 2023' },
     location: {
       en: 'Remote - New York, New York, United States',
       pt: 'Remoto - Nova York, Nova York, Estados Unidos',
@@ -421,8 +421,8 @@ export const experiences: I18NExperience[] = [
       en: 'Senior full stack engineer',
       pt: 'Desenvolvedor Full Stack Sênior',
     },
-    start: { en: 'May 2021', pt: 'Maio 2021' },
-    end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
+    start: { en: 'May 2021', pt: 'Maio de 2021' },
+    end: { en: 'Dec 2021', pt: 'Dezembro de 2021' },
     location: {
       en: 'Remote - São Paulo - SP - Brazil',
       pt: 'Remoto - São Paulo - SP - Brasil',
@@ -465,8 +465,8 @@ export const experiences: I18NExperience[] = [
       en: 'Senior full stack engineer',
       pt: 'Desenvolvedor Full Stack Lead',
     },
-    start: { en: 'Oct 2019', pt: 'Outubro 2019' },
-    end: { en: 'Dec 2021', pt: 'Dezembro 2021' },
+    start: { en: 'Oct 2019', pt: 'Outubro de 2019' },
+    end: { en: 'May 2021', pt: 'Maio de 2021' },
     location: {
       en: 'Remote - São Paulo - SP - Brazil',
       pt: 'Remoto - São Paulo - SP - Brasil',
