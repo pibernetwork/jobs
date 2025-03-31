@@ -21,11 +21,11 @@ import Methodology from './sections/methodology';
 import Skills from './sections/skills';
 import Summary from './sections/summary';
 
-export default function Resume({ lang }: { lang: Locale }) {
+export default function Resume() {
   return (
     <ResumeContext.Provider
       value={{
-        lang,
+        lang: 'en',
         personal,
         titles,
         labels,
@@ -47,14 +47,7 @@ export default function Resume({ lang }: { lang: Locale }) {
           <Education />
           <Languages />
         </div>
-        <div className="print:hidden my-4">
-          <a href="/en" className="p-4 bg-red-400">
-            English
-          </a>
-          <a href="/pt" className="p-4 bg-yellow-400">
-            Português
-          </a>
-        </div>
+
       </div>
     </ResumeContext.Provider>
   );

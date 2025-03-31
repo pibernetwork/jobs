@@ -1,7 +1,7 @@
 import { ReactElement, SVGProps } from 'react';
 
 type I18N<T> = {
-  pt: T;
+
   en: T;
 };
 
