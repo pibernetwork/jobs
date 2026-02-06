@@ -5,20 +5,24 @@ export default function Header() {
 
   const personalLinks = [
     {
+      title: personal.phone[lang].label,
+      link: `tel:${personal.phone[lang].value}`,
+    },
+    {
       title: personal.email,
       link: `mailto:${personal.email}`,
     },
     {
-      title: 'Linkedin',
+      title: 'LinkedIn',
       link: personal.linkedin,
     },
     {
-      title: 'Github',
+      title: 'GitHub',
       link: personal.github,
     },
 
     {
-      title: `${personal.location.city} - ${personal.location.state} - ${personal.location.country}`,
+      title: `${personal.location.label[lang]}`,
       link: personal.location.maps,
     },
   ];

@@ -6,8 +6,10 @@ export default function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="my-1">
-      <h2 className="text-base font-bold leading-tight">{title}</h2>
+    <div className="my-3">
+      <h2 className="text-base font-bold leading-tight text-center text-underline mb-2">
+        {title}
+      </h2>
       <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <div className="px-1">{children}</div>
     </div>

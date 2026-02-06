@@ -6,7 +6,7 @@ export default function Methodology() {
 
   return (
     <Section title={labels.methodology[lang]}>
-      <div className="p-1">
+      <div className="p-2">
         {methodology.map((book) => (
           <p key={book[lang]} className="text-xs">
             - {book[lang]}

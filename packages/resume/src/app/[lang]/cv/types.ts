@@ -1,11 +1,13 @@
 import { ReactElement, SVGProps } from 'react';
 
 type I18N<T> = {
-  pt: T;
+
   en: T;
 };
 
 export type I18NString = I18N<string>;
+
+export type I18NPhone = I18N<{ label: string; value: string }>;
 
 export type Titles = I18NString[];
 
@@ -35,30 +37,22 @@ export interface Personal {
   instagram: string;
   facebook: string;
   github: string;
+  phone: I18NPhone;
   location: {
-    city: string;
-    state: string;
-    country: string;
+    label: I18NString;
     maps: string;
   };
-}
-
-export interface Experience {
-  company: string;
-  title: string;
-  start: string;
-  end: string;
-  location: string;
-  responsabilities: string[];
 }
 
 export interface I18NExperience {
   company: string;
   title: I18NString;
+  skills: string[];
   start: I18NString;
   end: I18NString;
   location: I18NString;
-  responsabilities: I18NString[];
+  description: I18NString;
+  achievements: I18NString[];
 }
 
 export interface College {
@@ -92,11 +86,6 @@ export interface Library {
   current: boolean;
 }
 
-export interface Achievement {
-  title: string;
-  description: string;
-}
-
 export type Methodology = I18NString[];
 
 export interface Resume {
@@ -108,8 +97,6 @@ export interface Resume {
   experiences: I18NExperience[];
   methodology: I18NString[];
   technologies: TechnologyGroup[];
-
   education: Education;
-  achievements: Achievement[];
   languages: Language[];
 }
