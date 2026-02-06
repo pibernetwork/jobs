@@ -1,24 +1,13 @@
 import { Metadata } from 'next';
 import { metadata } from './cv/data/data';
-import { Locale } from './cv/data/languages';
 import Resume from './cv/resume';
 
-type Props = {
-  params: Promise<{
-    lang: Locale;
-  }>;
-};
-
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
-  const { lang } = await params;
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: metadata.title[lang],
+    title: metadata.title.en,
   };
 }
 
-export default async function Page({ params }: Props) {
-  const { lang } = await params;
-  return <Resume lang={lang} />;
+export default async function Page() {
+  return <Resume />;
 }
