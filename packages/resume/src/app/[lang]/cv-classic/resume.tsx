@@ -1,6 +1,5 @@
 'use client';
 
-import { use } from 'react';
 import Column from './components/column';
 import { ResumeContext } from './context/resume.context';
 import {
@@ -14,7 +13,8 @@ import {
   technologies,
   titles,
 } from './data/data';
-import { Locale, getDictionary } from './data/languages';
+import { Locale } from './data/languages';
+import { Achievement } from './types';
 import Achievements from './sections/achievements';
 import Education from './sections/education';
 import Experiences from './sections/experiences';
@@ -24,9 +24,12 @@ import Methodology from './sections/methodology';
 import Skills from './sections/skills';
 import Summary from './sections/summary';
 
-export default function Resume({ lang }: { lang: Locale }) {
-  const intl = use(getDictionary(lang));
+interface ResumeProps {
+  lang: Locale;
+  intl: { achievements: Achievement[] };
+}
 
+export default function Resume({ lang, intl }: ResumeProps) {
   const { achievements } = intl;
 
   return (

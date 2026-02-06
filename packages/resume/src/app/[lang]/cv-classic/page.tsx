@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { metadata } from './data/data';
-import { Locale } from './data/languages';
+import { getDictionary, Locale } from './data/languages';
 import Resume from './resume';
 
 type Props = {
@@ -20,5 +20,6 @@ export async function generateMetadata({
 
 export default async function Page({ params }: Props) {
   const { lang } = await params;
-  return <Resume lang={lang} />;
+  const intl = await getDictionary(lang);
+  return <Resume lang={lang} intl={intl} />;
 }
