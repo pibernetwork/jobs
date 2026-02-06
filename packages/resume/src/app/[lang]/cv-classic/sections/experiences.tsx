@@ -9,7 +9,7 @@ export default function Experiences() {
     <Section title={labels.experience[lang]}>
       <div className="divide-y">
         {experiences.map((entry) => (
-          <ExperienceCard key={entry.title[lang]} entry={entry} />
+          <ExperienceCard key={`${entry.company}-${entry.title[lang]}`} entry={entry} />
         ))}
       </div>
     </Section>
