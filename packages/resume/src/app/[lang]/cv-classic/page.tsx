@@ -20,6 +20,6 @@ export async function generateMetadata({
 
 export default async function Page({ params }: Props) {
   const { lang } = await params;
-  const intl = await getDictionary(lang);
-  return <Resume lang={lang} intl={intl} />;
+  const dict = await getDictionary(lang);
+  return <Resume lang={lang} achievements={dict.achievements} />;
 }

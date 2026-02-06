@@ -26,11 +26,10 @@ import Summary from './sections/summary';
 
 interface ResumeProps {
   lang: Locale;
-  intl: { achievements: Achievement[] };
+  achievements: Achievement[];
 }
 
-export default function Resume({ lang, intl }: ResumeProps) {
-  const { achievements } = intl;
+export default function Resume({ lang, achievements }: ResumeProps) {
 
   return (
     <ResumeContext.Provider
